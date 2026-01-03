@@ -1,6 +1,6 @@
-# C++ Templates & DSA
+# Templates 
 
-This repository contains reusable C++ boilerplate code and
+This repository contains reusable boilerplate code and
 implementations of common data structures and algorithms.
 
 ## Structure
