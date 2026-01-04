@@ -1,0 +1,25 @@
+vector<vector<T>> ans;
+int n = arr.size();
+ // How many permutations does this code generate
+//P(n,3)=n×(n−1)×(n−2) --> Permutation of 3 elemnts in 5 elements
+	​
+
+for (int i = 0; i < n; i++) {          // pos1
+    for (int j = 0; j < n; j++) {      // pos2                                   
+        if (j == i) continue;
+        for (int k = 0; k < n; k++) {  // pos3
+            if (k == i || k == j) continue;
+            
+            // 1️⃣ Pick elements
+            T a = arr[i];
+            T b = arr[j];
+            T c = arr[k];
+
+            // 2️⃣ Check constraints
+            if (valid(a, b, c)) {
+                ans.push_back({a, b, c});
+            }
+        }
+    }
+}
+
